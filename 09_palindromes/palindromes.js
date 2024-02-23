@@ -6,6 +6,7 @@
 const palindromes = function (string) {
     const newString = string.toLowerCase().split("").filter(char => {
         const charVal = char.charCodeAt(0)
+        // I'm filtering lower case letters and numbers using ascii
         return (charVal >= 97 && charVal <= 122) || (charVal >= 48 && charVal <= 57)
     })
     left = 0
